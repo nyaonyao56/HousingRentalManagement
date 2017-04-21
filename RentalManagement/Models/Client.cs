@@ -10,3 +10,5 @@ namespace RentalManagement.Models {
         public ICollection<RentHistoryRecord> RentRecords { get; set; }
     }
 }
+
+
