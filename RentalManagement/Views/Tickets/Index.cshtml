@@ -17,7 +17,7 @@
             @Html.DisplayNameFor(model => model.issueDate)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.unit.address)
+            @Html.DisplayNameFor(model => model.asset.Address.StreetAddress)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.priority)
@@ -43,7 +43,7 @@
             @Html.DisplayFor(model => item.issueDate)
         </td>
         <td>
-            @Html.DisplayFor(model => item.unit.address)
+            @Html.DisplayFor(model => item.asset.Address.StreetAddress)
         </td>
         <td>
             @Html.DisplayFor(model => item.priority)

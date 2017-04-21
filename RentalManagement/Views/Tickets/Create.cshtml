@@ -25,10 +25,10 @@
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
             <label class="control-label col-md-2">Unit</label>
-            <!--@Html.LabelFor(model => model.rentalUnit.address, htmlAttributes: new { @class = "control-label col-md-2" })-->
+            <!--@Html.LabelFor(model => model.Asset.Address, htmlAttributes: new { @class = "control-label col-md-2" })-->
             <div class="col-md-10">
-                @Html.DropDownListFor(model => model.rentalUnit.unitId, new SelectList(Model.RentalUnits, "unitId", "address"), "Select Unit Address", new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.rentalUnit, "", new { @class = "text-danger" })
+                @Html.DropDownListFor(model => model.Asset.Id, new SelectList(Model.Assets, "Id", "Name"), "Select Unit Address", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Asset, "", new { @class = "text-danger" })
             </div>
         </div>
 

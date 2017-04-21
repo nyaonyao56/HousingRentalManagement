@@ -32,7 +32,7 @@
             @Html.DisplayFor(modelItem => item.AssetType)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.AssetAddress)
+            @Html.DisplayFor(modelItem => item.AssetAddress.StreetAddress)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ClientId }, null) |

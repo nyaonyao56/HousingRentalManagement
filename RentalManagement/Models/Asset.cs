@@ -23,5 +23,11 @@ namespace RentalManagement.Models {
 
         public ICollection<RentHistoryRecord> RentRecords;
 
+        public ICollection<Ticket> tickets { get; set; }
+
+        public Asset()
+        {
+            tickets = new List<Ticket>();
+        }
     }
 }
